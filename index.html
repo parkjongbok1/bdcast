@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>프로잭트명입니다</title>
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+
+    <!-- 로컬작업시 주석 -->
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- 로컬작업시 주석 -->
+
+    <!-- 로컬작업시 주석해제 -->
+    <!-- <link rel="stylesheet" href="css/common.css<?php echo '?ver='.date('Ymds');?>" />
+    <link rel="stylesheet" href="css/style.css<?php echo '?ver='.date('Ymds');?>" /> -->
+    <!-- 로컬작업시 주석해제 -->
+
+    <meta property="og:image" content="../meta/thumb.jpg" />
+    <link rel="shortcut icon" href="../meta/favicon.ico" />
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/EC_scroll.js"></script>
+    <script src="js/scroll_event_plus.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+      if (
+        navigator.userAgent.match(
+          /iPhone|iPad|Mobile|UP.Browser|Android|BlackBerry|Windows CE|Nokia|webOS|Opera Mini|SonyEricsson|opera mobi|Windows Phone|IEMobile|POLARIS/
+        ) != null
+      ) {
+        top.location.href = "../mobile/"; //모바일용 인덱스파일을 띄어라
+      }
+    </script>
+  </head>
+  <body>
+    <!-- wrep -->
+    <div class="wrep">
+      <!-- header -->
+      <header class="header">
+        <h1 class="logo">
+          <a href="#">
+            <img src="image/logo.png" alt="" />
+          </a>
+        </h1>
+
+        <div class="header_point">
+          <span>budongsan marketing</span>
+        </div>
+
+        <div class="menu_btn">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </header>
+
+      <!-- main wrapper -->
+      <main class="main wrapper">
+        <!-- sec01 visual -->
+        <section class="sec01 visual">
+          <div class="title">
+            <div class="title_wrap">
+              <img src="image/vi_title01.png" alt="" class="vi_title01" />
+
+              <div class="vi_title02">
+                <h4>
+                  Designing for Understanding People
+                  <span class=""></span>
+                  사람을 이해하는 디자인
+                </h4>
+              </div>
+
+              <div class="vi_t_po">
+                <img src="image/vi_tt.png" alt="" />
+                <img src="image/vi_oo.png" alt="" />
+                <img src="image/vi_lok.png" alt="" />
+              </div>
+
+              <p>
+                사람과의 소통을 기반으로 사람을 이해하는 가장 사람다운 사람들이
+                사람들과 함께 만들어가는 부동산캐스트 입니다. <br />
+                고객의 브랜드가 소비자의 주목과 신뢰를 받을 수 있는 전략적이고
+                효과적인 컨설팅을 제공할 수 있도록 기술적으로 감성적으로 항상
+                고민하고 노력합니다.<br />
+                사용자의 시선에서 바라보며 판단하는 사용자에게 가장 잘 맞는
+                맞춤형 디자인으로 한발 한발 맞추어 가는 부동산캐스트가
+                되겠습니다.<br />
+              </p>
+            </div>
+
+            <div class="vi_point">
+              <span>EVERYTHING ABOUT ONLINE ADVERTISING</span>
+            </div>
+          </div>
+
+          <div class="vi_igure">
+            <div class="triangle"></div>
+            <div class="square"></div>
+            <div class="circle"></div>
+          </div>
+        </section>
+
+        <!-- sec02 produce -->
+        <section class="sec02 produce">
+          <h2>
+            EVERYTHING ABOUT <br />
+            <strong> ONLINE ADVERTISING</strong>
+          </h2>
+
+          <script>
+            $(".produce").on("mousemove", function (event) {
+              const mouseX = event.clientX;
+              const mouseY = event.clientY;
+      
+              $(".produce h2").css({
+                transform:
+                  "translate(" + mouseX * 0.01 + "px, " + mouseY * 0.01 + "px)",
+              });
+            });
+          </script>
+
+          <div class="produce_items">
+            <img class="pd_item01" src="image/produce_item01.png" alt="" />
+            <img class="pd_item02" src="image/produce_item02.png" alt="" />
+            <img class="pd_item03" src="image/produce_item03.png" alt="" />
+            <img class="pd_item04" src="image/produce_item04.png" alt="" />
+            <img class="pd_item05" src="image/produce_item06.png" alt="" />
+            <img class="pd_item06" src="image/produce_item05.png" alt="" />
+            <img class="pd_item07" src="image/produce_item07.png" alt="" />
+          </div>
+        </section>
+
+        <!-- sec03 work -->
+        <section class="sec03 work">
+          <div class="inner">
+            <div class="desc desc01">
+              <div class="title">
+                <h2>
+                  Web/Mobile <br />
+                  Production
+                </h2>
+                <p>
+                  웹/모바일 반응형 홈페이지 분양관리 프로그램 개발 제작 <br />
+                  이벤트 페이지 제작 광고물 제작
+                </p>
+              </div>
+
+              <div class="link_cont">
+                <img src="image/work_item01.png" alt="" />
+              </div>
+            </div>
+
+            <div class="desc desc02">
+              <div class="title">
+                <h2>
+                  Online <br />
+                  Advertisement
+                </h2>
+                <p>
+                  웹/모바일 광고 키워드광고, 배너광고, 동영상광고, <br />
+                  네트워크광고
+                </p>
+              </div>
+
+              <div class="link_cont">
+                <img src="image/work_item02.png" alt="" />
+              </div>
+            </div>
+
+            <div class="desc desc03">
+              <div class="title">
+                <h2>VR production</h2>
+                <p>
+                  VR촬영 실내 항공 프로그랭 밍을 통한 웹 모바일 노출, <br />
+                  홍보영상제작, 가상체험 뷰 제작
+                </p>
+              </div>
+
+              <div class="link_cont">
+                <img src="image/work_item03.png" alt="" />
+              </div>
+            </div>
+
+            <div class="desc desc04">
+              <div class="title">
+                <h2>PRㆍViral</h2>
+                <p>애드버토리얼, 블로그 배포, 커뮤니티 배너, SNS, 온라인 PR</p>
+              </div>
+
+              <div class="link_cont">
+                <img src="image/work_item04.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <script>
+          $(".work").on("mousemove", function (event) {
+            const mouseX = event.clientX;
+            const mouseY = event.clientY;
+
+            $(".work .desc01 .link_cont img").css({
+              transform:
+                "translate(" + mouseX * 0.01 + "px, " + -mouseY * 0.01 + "px)",
+            });
+            $(".work .desc02 .link_cont img").css({
+              transform:
+                "translate(" +
+                -mouseX * 0.017 +
+                "px, " +
+                mouseY * 0.017 +
+                "px)",
+            });
+            $(".work .desc03 .link_cont img").css({
+              transform:
+                "translate(" +
+                -mouseX * 0.013 +
+                "px, " +
+                -mouseY * 0.013 +
+                "px)",
+            });
+            $(".work .desc04 .link_cont img").css({
+              transform:
+                "translate(" +
+                mouseX * 0.011 +
+                "px, " +
+                -mouseY * 0.011 +
+                "px)",
+            });
+          });
+        </script>
+
+        <!-- sec04 motto -->
+        <section class="sec04 motto">
+          <div class="inner">
+            <div class="title">
+              <h2>1st Web Product Company Motto</h2>
+              <span>
+                연간 최소 40개에서 최대 70개 이상의 프로젝트를 수행하며 쌓아온
+                노하우로 건설/분양 온라인 광고제작사 1위 기업의 이름에 부끄럽지
+                않을 경험과 <br />
+                스킬을 보유하고 있으며 급변하는 웹 비즈니스의 성장 속에 다변하는
+                웹환경 구축에 있어 누구보다 빠르게 대응할 수 있는 부동산 캐스트
+                입니다.
+              </span>
+            </div>
+
+            <div class="desc">
+              <div class="item mo_item01 ani_S t-delay0_3">
+                <h3>Passion</h3>
+                <p>
+                  좋아하는 일에대한 열정만큼 신나는것이 있을까요? <br />
+                  다산인의 열정은 언제나 뜨겁고 즐겁습니다.
+                </p>
+              </div>
+
+              <div class="item mo_item02 ani_S t-delay0_4">
+                <h3>ideal and reality</h3>
+                <p>
+                  광고에서 이상과 현실은 비용과 효율에 비교되곤 합니다. <br />
+                  최소금액 최고효율을 원하는 고객의 마음을 이해합니다.
+                </p>
+              </div>
+
+              <div class="item mo_item03 ani_S t-delay0_5">
+                <h3>Emotion</h3>
+                <p>
+                  사람의 마음은 논리보다 감정에 조금더 치우쳐 있곤합니다. <br />
+                  사람의 감성을 공유할 줄 아는 광고를 만들어 갑니다.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- sec05 idea -->
+        <section class="sec05 idea">
+          <div class="inner">
+            <div class="title">
+              <h2>
+                Total On-line AD Solution <br />
+                Company IDEA Bank
+              </h2>
+              <p>
+                새로운 아이디어가 떠오르면 계산과 실험으로 그 아이디어의 옳고
+                그름을 가려내야 합니다. <br />
+                그런데 아이디어 자체를 독창적이라고 여기는 풍조가 우리 주변에는
+                꽤 존재합니다.<br />
+                아이디어는 구체적인 검증에 의해 비로소 그 의미와 무게를 갖게
+                됩니다.
+              </p>
+            </div>
+
+            <div class="idea_point">
+              <img src="image/idea_point.png" alt="" />
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- footer -->
+      <footer class="footer" id="common">
+        <div class="family">
+          <strong>family company</strong>
+          <a href="#">자연과힐링 리조트</a>
+          <a href="#">힐링스페이스 카페</a>
+        </div>
+
+        <div class="desc">
+          <h3>
+            <span>address</span> 서울 관악구 남부순환로231길 16 2층 부동산캐스트
+          </h3>
+          <h3><span>e-mail</span> nokup@daum.net</h3>
+          <h3><span>tel</span> 02)876-8887</h3>
+          <h3><span>fax</span> 02)277-0015</h3>
+        </div>
+
+        <div class="ad_cont">
+          <h2>Copyright(c) 부동산캐스트 All Right Reserved.</h2>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

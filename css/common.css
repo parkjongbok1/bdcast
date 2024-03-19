@@ -1,0 +1,344 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap");
+/* font-family: 'Noto Sans KR', sans-serif; */
+/* Light 300 */
+/* Regular 400 */
+/* Medium 500 */
+/* Bold 700 */
+/* Black 900 */
+
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&display=swap");
+/* font-family: 'IBM Plex Sans KR', sans-serif; */
+/* Thin 100 */
+/* ExtraLight 200 */
+/* Light 300 */
+/* Regular 400 */
+/* Medium 500 */
+/* SemiBold 600 */
+/* Bold 700 */
+
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap");
+/* font-family: 'Merriweather', serif; */
+/* Light 300 */
+/* Regular 400 */
+/* Bold 700 */
+/* Black 900 */
+
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap");
+/* font-family: 'Nanum Myeongjo', serif; */
+/* Regular 400 */
+/* Bold 700 */
+/* ExtraBold 800 */
+
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+/* font-family: "Bungee", sans-serif; */
+/* font-weight: 400; */
+/* font-style: normal;  */
+
+.ani {
+  opacity: 0;
+  transform: translateY(15px);
+  transition: all 1s;
+}
+.ani_T {
+  opacity: 0;
+  transform: translateY(-15px);
+  transition: all 1s;
+}
+.ani_L {
+  opacity: 0;
+  transform: translateX(-15px);
+  transition: all 1s;
+}
+.ani_R {
+  opacity: 0;
+  transform: translateX(15px);
+  transition: all 1s;
+}
+.ani_O {
+  opacity: 0;
+  transition: all 1s;
+}
+.ani_S {
+  transform: scale(1.2);
+  opacity: 0;
+  transition: all 1s;
+}
+
+.aniIn {
+  opacity: 1;
+  transform: translateY(0);
+}
+.aniIn_T {
+  opacity: 1;
+  transform: translateY(0);
+}
+.aniIn_L {
+  opacity: 1;
+  transform: translateX(0);
+}
+.aniIn_R {
+  opacity: 1;
+  transform: translateX(0);
+}
+.aniIn_O {
+  opacity: 1;
+}
+.aniIn_S {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.t-delay0_1 {
+  transition-delay: 0.1s;
+}
+.t-delay0_2 {
+  transition-delay: 0.2s;
+}
+.t-delay0_3 {
+  transition-delay: 0.3s;
+}
+.t-delay0_4 {
+  transition-delay: 0.4s;
+}
+.t-delay0_5 {
+  transition-delay: 0.5s;
+}
+.t-delay0_6 {
+  transition-delay: 0.6s;
+}
+.t-delay0_7 {
+  transition-delay: 0.7s;
+}
+.t-delay0_8 {
+  transition-delay: 0.8s;
+}
+.t-delay0_9 {
+  transition-delay: 0.9s;
+}
+.t-delay1 {
+  transition-delay: 1s;
+}
+/* wrap */
+html {
+  height: 100%;
+  background: #ffffff;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: -1.5px;
+  word-break: keep-all;
+  color: #000;
+
+  background: linear-gradient(to bottom, #0b1230, #f8f8f8);
+}
+.wrep {
+  width: 100%;
+  max-width: 1920px;
+  min-width: 1400px;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+}
+section {
+  /* width: 100%; */
+  max-width: 1920px;
+  min-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+  /* overflow: hidden; */
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* header */
+.header {
+  width: 90.4%;
+  /* height: 100px; */
+
+  position: fixed;
+  left: 50%;
+  top: 8%;
+  transform: translateX(-50%);
+  transition: 0.5s;
+  z-index: 3000;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  color: white;
+}
+
+.header .logo {
+  width: 17.85%;
+  transition: 0.5s;
+}
+.header .logo a {
+  width: 100%;
+  display: block;
+}
+.header .logo a img {
+  width: 100%;
+}
+
+.header.active {
+  width: 100%;
+  height: 100px;
+  top: 0;
+  background: #040b2a;
+}
+
+.header.active .logo {
+  width: 10%;
+  margin-left: 100px;
+}
+
+.header_point {
+  margin-left: -15%;
+  position: relative;
+  z-index: 1000;
+}
+
+.header.active .header_point {
+  display: none;
+}
+.header_point::after,
+.header_point::before {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.3s;
+  z-index: 1000;
+
+  height: 2px;
+  background: white;
+  display: block;
+}
+.header_point::after {
+  left: calc(100% + 16%);
+  width: 29.3vw;
+}
+.header_point::before {
+  right: calc(100% + 16%);
+  width: 101%;
+}
+.header_point span {
+  display: block;
+  font-size: 24px;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-family: "Merriweather", serif;
+}
+
+.header .menu_btn {
+  width: 32px;
+  height: 32px;
+  /* background: pink; */
+  position: relative;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.header.active .menu_btn {
+  margin-right: 100px;
+}
+.header .menu_btn span {
+  width: 10px;
+  height: 10px;
+  background: white;
+  position: absolute;
+}
+.header .menu_btn span:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+.header .menu_btn span:nth-child(2) {
+  top: 0;
+  right: 0;
+}
+.header .menu_btn span:nth-child(4),
+.header .menu_btn span:nth-child(3) {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+.header .menu_btn span:nth-child(4) {
+}
+.header .menu_btn span:nth-child(5) {
+  left: 0;
+  bottom: 0;
+}
+.header .menu_btn span:nth-child(6) {
+  right: 0;
+  bottom: 0;
+}
+
+/* footer */
+.footer {
+  position: absolute;
+  left: 200px;
+  bottom: 100px;
+}
+.footer .family {
+  font-size: 20px;
+}
+.footer .family strong {
+  font-weight: 600;
+  font-style: normal;
+  color: #575757;
+  text-transform: uppercase;
+  margin-right: 32px;
+}
+.footer .family a {
+  font-weight: 400;
+  font-style: normal;
+  color: #040b2a;
+  margin-right: 21px;
+  display: inline-block;
+}
+
+.footer .desc {
+  margin: 76px 0 62px;
+}
+.footer .desc h3 {
+  font-size: 24px;
+  font-weight: 600;
+  font-style: normal;
+  color: #040b2a;
+  text-transform: none;
+  margin-bottom: 26px;
+}
+.footer .desc h3:last-child {
+  margin-bottom: 0;
+}
+.footer .desc h3 span {
+  font-size: 22px;
+  font-weight: 400;
+  font-style: normal;
+  color: #575757;
+  text-transform: uppercase;
+
+  width: 88px;
+  display: inline-block;
+  margin-right: 60px;
+}
+
+.footer .ad_cont {
+}
+.footer .ad_cont h2 {
+  font-size: 24px;
+  font-weight: 600;
+  font-style: normal;
+  color: #040b2a;
+
+  text-transform: uppercase;
+}
