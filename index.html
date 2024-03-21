@@ -64,6 +64,60 @@
         </div>
       </header>
 
+      <div class="site_map">
+        <ul class="site_wrap">
+          <li class="sub_menu sub_menu01">
+            <a href="#" class="ttop_sub">introduce</a>
+          </li>
+
+          <li class="sub_menu sub_menu02">
+            <a href="#" class="ttop_sub">wokrs</a>
+            <ul class="sub_site_wrap">
+              <li><a href="#" class="sub_me">웹, 모바일 사이트 제작</a></li>
+              <li><a href="#" class="sub_me">웹, 모바일 사이트 유지보수</a></li>
+              <li><a href="#" class="sub_me">온라인 광고</a></li>
+              <li><a href="#" class="sub_me">vr</a></li>
+            </ul>
+          </li>
+
+          <li class="sub_menu sub_menu03">
+            <a href="#" class="ttop_sub">portfolio</a>
+            <ul class="sub_site_wrap">
+              <li><a href="#" class="sub_me">연간유지보수</a></li>
+              <li><a href="#" class="sub_me">주요실적</a></li>
+              <li><a href="#" class="sub_me">연간실적</a></li>
+            </ul>
+          </li>
+
+          <li class="sub_menu sub_menu04">
+            <a href="#" class="ttop_sub">contacts us</a>
+          </li>
+        </ul>
+
+        <div class="foot_title">
+          <div class="desc">
+            <h3>
+              <span>address</span>
+              서울 관악구 남부순환로231길 16 2층 부동산캐스트
+            </h3>
+            <h3>
+              <span>TEL</span>
+              02)876-8887
+            </h3>
+            <h3>
+              <span>E-MAIL</span>
+              nokup@daum.net
+            </h3>
+          </div>
+
+          <div class="desc">
+            <strong>FAMILY COMPANY</strong>
+            <a href="#">자연과힐링 리조트</a>
+            <a href="#">힐링스페이스카페</a>
+          </div>
+        </div>
+      </div>
+
       <!-- main wrapper -->
       <main class="main wrapper">
         <!-- sec01 visual -->
@@ -112,7 +166,7 @@
 
         <!-- sec02 produce -->
         <section class="sec02 produce">
-          <h2>
+          <h2 class="">
             EVERYTHING ABOUT <br />
             <strong> ONLINE ADVERTISING</strong>
           </h2>
@@ -121,10 +175,14 @@
             $(".produce").on("mousemove", function (event) {
               const mouseX = event.clientX;
               const mouseY = event.clientY;
-      
+
               $(".produce h2").css({
                 transform:
-                  "translate(" + mouseX * 0.01 + "px, " + mouseY * 0.01 + "px)",
+                  "translate(" +
+                  mouseX * 0.015 +
+                  "px, " +
+                  mouseY * 0.015 +
+                  "px)",
               });
             });
           </script>
@@ -145,59 +203,65 @@
           <div class="inner">
             <div class="desc desc01">
               <div class="title">
-                <h2>
+                <h2 class="ani_L">
                   Web/Mobile <br />
                   Production
                 </h2>
-                <p>
+
+                <p class="ani_L t-delay0_2">
                   웹/모바일 반응형 홈페이지 분양관리 프로그램 개발 제작 <br />
                   이벤트 페이지 제작 광고물 제작
                 </p>
               </div>
 
-              <div class="link_cont">
+              <div class="link_cont ani_R">
                 <img src="image/work_item01.png" alt="" />
               </div>
             </div>
 
             <div class="desc desc02">
               <div class="title">
-                <h2>
+                <h2 class="ani_L" class="ani_L t-delay0_2">
                   Online <br />
                   Advertisement
                 </h2>
-                <p>
+
+                <p class="ani_L" class="ani_L t-delay0_2">
                   웹/모바일 광고 키워드광고, 배너광고, 동영상광고, <br />
                   네트워크광고
                 </p>
               </div>
 
-              <div class="link_cont">
+              <div class="link_cont ani_R">
                 <img src="image/work_item02.png" alt="" />
               </div>
             </div>
 
             <div class="desc desc03">
               <div class="title">
-                <h2>VR production</h2>
-                <p>
+                <h2 class="ani_L" class="ani_L t-delay0_2">VR production</h2>
+
+                <p class="ani_L" class="ani_L t-delay0_2">
                   VR촬영 실내 항공 프로그랭 밍을 통한 웹 모바일 노출, <br />
                   홍보영상제작, 가상체험 뷰 제작
                 </p>
               </div>
 
-              <div class="link_cont">
+              <div class="link_cont ani_R">
                 <img src="image/work_item03.png" alt="" />
               </div>
             </div>
 
             <div class="desc desc04">
               <div class="title">
-                <h2>PRㆍViral</h2>
-                <p>애드버토리얼, 블로그 배포, 커뮤니티 배너, SNS, 온라인 PR</p>
+                <h2 class="ani_L" class="ani_L t-delay0_2">PRㆍViral</h2>
+
+                <p class="ani_L" class="ani_L t-delay0_2">
+                  애드버토리얼, 블로그 배포, 커뮤니티 배너, SNS, 온라인 PR
+                </p>
               </div>
 
-              <div class="link_cont">
+              <div class="link_cont ani_R">
                 <img src="image/work_item04.png" alt="" />
               </div>
             </div>
@@ -211,32 +275,35 @@
 
             $(".work .desc01 .link_cont img").css({
               transform:
-                "translate(" + mouseX * 0.01 + "px, " + -mouseY * 0.01 + "px)",
+                "translate(" + mouseX * 0.02 + "px, " + -mouseY * 0.02 + "px)",
             });
+
             $(".work .desc02 .link_cont img").css({
               transform:
                 "translate(" +
-                -mouseX * 0.017 +
+                -mouseX * 0.027 +
                 "px, " +
-                mouseY * 0.017 +
+                mouseY * 0.027 +
                 "px)",
             });
+
             $(".work .desc03 .link_cont img").css({
               transform:
                 "translate(" +
-                -mouseX * 0.013 +
+                -mouseX * 0.023 +
                 "px, " +
-                -mouseY * 0.013 +
+                -mouseY * 0.023 +
                 "px)",
             });
+
             $(".work .desc04 .link_cont img").css({
               transform:
-                "translate(" +
-                mouseX * 0.011 +
-                "px, " +
-                -mouseY * 0.011 +
-                "px)",
+                "translate(" + mouseX * 0.021 + "px, " + mouseY * 0.021 + "px)",
             });
+
+            // $(".link_cont .circie").css({
+            //   transform: "translate(" + mouseX + "px, " + mouseY + "px)",
+            // });
           });
         </script>
 
@@ -244,8 +311,8 @@
         <section class="sec04 motto">
           <div class="inner">
             <div class="title">
-              <h2>1st Web Product Company Motto</h2>
-              <span>
+              <h2 class="ani_L">1st Web Product Company Motto</h2>
+              <span class="ani_L t-delay0_2">
                 연간 최소 40개에서 최대 70개 이상의 프로젝트를 수행하며 쌓아온
                 노하우로 건설/분양 온라인 광고제작사 1위 기업의 이름에 부끄럽지
                 않을 경험과 <br />
@@ -287,11 +354,11 @@
         <section class="sec05 idea">
           <div class="inner">
             <div class="title">
-              <h2>
+              <h2 class="ani_L">
                 Total On-line AD Solution <br />
                 Company IDEA Bank
               </h2>
-              <p>
+              <p class="ani_L t-delay0_2">
                 새로운 아이디어가 떠오르면 계산과 실험으로 그 아이디어의 옳고
                 그름을 가려내야 합니다. <br />
                 그런데 아이디어 자체를 독창적이라고 여기는 풍조가 우리 주변에는
@@ -301,7 +368,7 @@
               </p>
             </div>
 
-            <div class="idea_point">
+            <div class="idea_point ani_R">
               <img src="image/idea_point.png" alt="" />
             </div>
           </div>
@@ -309,7 +376,7 @@
       </main>
 
       <!-- footer -->
-      <footer class="footer" id="common">
+      <footer class="footer ani_O" id="common">
         <div class="family">
           <strong>family company</strong>
           <a href="#">자연과힐링 리조트</a>
